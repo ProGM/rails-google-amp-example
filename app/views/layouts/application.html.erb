@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AmpExample</title>
+  <link rel="canonical" href="<%= url_for(format: :html, only_path: false) %>" >
+  <link rel="amphtml" href="<%= url_for(format: :amp, only_path: false) %>" >
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
